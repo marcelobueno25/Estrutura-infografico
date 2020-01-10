@@ -1,0 +1,14 @@
+.content-fundo {
+    background: #fff;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 50px;
+    .content-img {
+        // max-width: 120px;
+        width: 100%;
+        // margin: 40px 0;
+    }
+}

@@ -1,0 +1,17 @@
+<section class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-3"><div id="teste1" class="content-fundo"><img data-depth="0.5" class="content-img" src="./img/comece.png" alt=""></div></div>
+        <div class="col-sm-6 col-md-6 col-lg-3"><div id="teste1" class="content-fundo"><img data-depth="0.5" class="content-img" src="./img/desenhar.png" alt=""></div></div>
+        <div class="col-sm-6 col-md-6 col-lg-3"><div id="teste1" class="content-fundo"><img data-depth="0.5" class="content-img" src="./img/inovacao.png" alt=""></div></div>
+        <div class="col-sm-6 col-md-6 col-lg-3"><div id="teste1" class="content-fundo"><img data-depth="0.5" class="content-img" src="./img/apoio.png" alt=""></div></div>
+    </div>
+</section>
+
+<script>
+    var tes = document.querySelectorAll('.content-fundo');
+    tes.forEach((item, teste)=> {
+        var parallaxInstance = new Parallax(item, {
+            relativeInput: false
+        });
+    });
+</script>
