@@ -30,16 +30,20 @@
         "root": "./dist/",
         "all": "./dist/*",
         "css": {
-            "root": "./dist/css/"
+            "root": "./dist/css/",
+            "all": "./dist/css/*"
         },
         "js": {
-            "root": "./dist/js/"
+            "root": "./dist/js/",
+            "all": "./dist/js/*"
         },
         "img": {
-            "root": "./dist/img/"
+            "root": "./dist/img/",
+            "all": "./dist/img/*"
         },
         "fonts": {
-            "root": "./dist/fonts/"
+            "root": "./dist/fonts/",
+            "all": "./dist/fonts/*"
         }
     },
     "default": {

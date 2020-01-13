@@ -56,9 +56,7 @@ gulp.task('css', async function() {
 //===============================================
 gulp.task('js', async function() {
     return gulp.src([paths.src.js.lib.all, paths.src.js.all])
-        .pipe(babel({
-            presets: ['@babel/env']
-        }))
+        .pipe(babel())
         .pipe(uglify())
         .pipe(gulp.dest(paths.dest.js.root));
 });
@@ -94,7 +92,7 @@ gulp.task('fonts', async function() {
 //                                            ZIP
 //===============================================
 gulp.task('zip', async function() {
-    return gulp.src(paths.dest.all)
+    return gulp.src('./dist/**')
         .pipe(zip('infografico.zip'))
         .pipe(gulp.dest(paths.default.root))
 });
