@@ -1,8 +1,10 @@
 {
     "src": {
         "root": "./src/",
+        "all": "./src/*",
         "views": {
-            "html": "./src/index.html"
+            "root": "./src/pages/*.html",
+            "all": "./src/pages/components/*"
         },
         "css": {
             "root": "./src/scss/style.scss",
@@ -14,12 +16,19 @@
             },
             "all": "./src/js/*.js"
         },
+        "img": {
+            "all": "./src/img/*"
+        },
         "fonts": {
-            "all": "./src/fonts/*.ttf"
+            "all": "./src/fonts/*"
+        },
+        "scorm": {
+            "all": "./src/scorm/*"
         }
     },
     "dest": {
         "root": "./dist/",
+        "all": "./dist/*",
         "css": {
             "root": "./dist/css/"
         },
@@ -32,5 +41,8 @@
         "fonts": {
             "root": "./dist/fonts/"
         }
+    },
+    "default": {
+        "root": "./zip/"
     }
 }

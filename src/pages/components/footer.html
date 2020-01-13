@@ -1,0 +1,21 @@
+<script>
+    var tes = document.querySelectorAll('.content-fundo');
+    tes.forEach((item, teste) => {
+        var parallaxInstance = new Parallax(item, {
+            relativeInput: false
+        });
+    });
+    var scene = document.getElementById('teste');
+    var parallaxInstance = new Parallax(scene, {
+        relativeInput: false,
+        scalarY: 3
+    });
+</script>
+
+<script src="./js/scorm.api.min.js"></script>
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="./js/style.js"></script>
+
+</body>
+
+</html>
