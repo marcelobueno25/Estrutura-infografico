@@ -1,6 +1,4 @@
 body::-webkit-scrollbar-track {
-    // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    // border-radius: 10px;
     background-color: #ccc;
 }
 
@@ -11,7 +9,6 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
     background: #555;
 }
 
@@ -43,8 +40,49 @@ body::-webkit-scrollbar-thumb {
     border-radius: 5px;
     padding: 50px;
     .content-img {
-        // max-width: 120px;
         width: 100%;
-        // margin: 40px 0;
+        position: relative;
     }
+}
+
+.parallax {
+    position: relative;
+}
+
+.header-box {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    left: 0;
+}
+
+.header-agua {
+    position: absolute;
+}
+
+.water {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.water-layer1 {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}
+
+.water-layer2 {
+    height: 78px;
+    width: 38px;
+    background-color: greenyellow;
+}
+
+.water-layer3 {
+    height: 26px;
+    width: 68px;
+    background-color: hotpink;
 }

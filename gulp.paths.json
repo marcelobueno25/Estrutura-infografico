@@ -4,7 +4,10 @@
         "all": "./src/*",
         "views": {
             "root": "./src/pages/*.html",
-            "all": "./src/pages/components/*"
+            "all": "./src/pages/*.html",
+            "components": {
+                "all": "./src/pages/components/*"
+            }
         },
         "css": {
             "root": "./src/scss/style.scss",

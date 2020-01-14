@@ -20,12 +20,11 @@ var pxtorem = require('postcss-pxtorem');
 var paths = require('./gulp.paths.json');
 
 
-
 //===============================================
 //                                           HTML
 //===============================================
 gulp.task('html', async function() {
-    return gulp.src(paths.src.views.root)
+    return gulp.src(paths.src.views.all)
         .pipe(fileinclude({
             prefix: '@@',
             basepath: '@file'
@@ -114,7 +113,7 @@ gulp.task('watch', function() {
         server: { baseDir: paths.dest.root }
     });
     gulp.watch([paths.src.css.root, paths.src.css.all], gulp.series('css', 'browsersync:reload'));
-    gulp.watch([paths.src.views.root, paths.src.views.all], gulp.series('html', 'browsersync:reload'));
+    gulp.watch([paths.src.views.root, paths.src.views.components.all], gulp.series('html', 'browsersync:reload'));
     gulp.watch([paths.src.js.all, paths.src.js.lib.all], gulp.series('js', 'browsersync:reload'));
     gulp.watch((paths.src.img.all), gulp.series('image', 'browsersync:reload'));
 })
