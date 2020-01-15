@@ -94,3 +94,10 @@ $(window).scroll(function() {
 //         console.log('Modal Point: ' + modalPoint.length);
 //     }
 // }
+
+$('.flip-container').each(function(i, el) {
+    console.log(el);
+    el.addEventListener( 'click', function() {
+        el.classList.toggle('is-flipped');
+    });
+});
