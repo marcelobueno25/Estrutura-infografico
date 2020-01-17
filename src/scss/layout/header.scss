@@ -60,3 +60,62 @@ body {
         }
     }
 }
+
+#fundo02 {
+    background: url('../img/000.png');
+    margin: 0px 0px;
+    background-position: center;
+    background-size: auto 101%;
+    height: 500px;
+    position: absolute !important;
+    width: 300%;
+    left: -100% !important;
+    top: -10%;
+}
+
+#estrela {
+    background: url('../img/001.png');
+    margin: 0px 0px;
+    background-position: center bottom;
+    background-size: contain;
+    height: 200px;
+    position: absolute !important;
+    width: 300%;
+    left: -100% !important;
+}
+
+#lua {
+    background: url('../img/003.png') no-repeat;
+    margin: 0px 0px;
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 100%;
+    position: absolute !important;
+    width: 300%;
+    left: -100% !important;
+    top: -35px;
+}
+
+#aviao {
+    background: url('../img/004.png') no-repeat;
+    margin: 0px 0px;
+    background-position: center bottom;
+    background-size: auto 101%;
+    height: 100%;
+    position: absolute !important;
+    width: 300%;
+    left: -100% !important;
+    top: -35px;
+}
+
+#city {
+    background: url(../img/005.png);
+    margin: 0px 0px;
+    background-position: center bottom;
+    background-size: contain;
+    height: 100%;
+    position: absolute !important;
+    width: 300%;
+    left: -100% !important;
+    bottom: 60px;
+}

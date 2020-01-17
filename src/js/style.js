@@ -97,7 +97,7 @@ $(window).scroll(function() {
 
 $('.flip-container').each(function(i, el) {
     console.log(el);
-    el.addEventListener( 'click', function() {
+    el.addEventListener('click', function() {
         el.classList.toggle('is-flipped');
     });
 });
